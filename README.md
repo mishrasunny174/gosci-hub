@@ -10,13 +10,14 @@ go instal github.com/mishrasunny174/gosci-hub
 ## Usage
 
 ```
-➜ gosci-hub -h
+➜  ~ gosci-hub
 Usage of gosci-hub:
   -outfile string
-    	Output File (default "output.pdf")
+    	Output file path (default "output.pdf")
   -url string
-    	Link of article you want to download
+    	Link of article or research paper you want to download
 ```
 
 ## Demo
 
+[![asciicast](https://asciinema.org/a/aWPqdLtXXswirVZ8zidvNgbJm.svg)](https://asciinema.org/a/aWPqdLtXXswirVZ8zidvNgbJm)
