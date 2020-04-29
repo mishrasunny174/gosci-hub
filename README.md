@@ -1,5 +1,5 @@
 # GOSCI-HUB
-A simple cli application to download pdf of research papers from sci-hub written in
+A simple cli application to download pdf of research papers from sci-hub
 
 ## Installation
 
