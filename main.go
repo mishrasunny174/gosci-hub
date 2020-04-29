@@ -25,8 +25,8 @@ func writeFile(filePath string, data []byte) (int64, error) {
 }
 
 func main() {
-	url := flag.String("url", "", "Link of article you want to download")
-	outFile := flag.String("outfile", "output.pdf", "Output File")
+	url := flag.String("url", "", "Link of article or research paper you want to download")
+	outFile := flag.String("outfile", "output.pdf", "Output file path")
 	flag.Parse()
 	if len(*url) == 0 {
 		flag.Usage()
