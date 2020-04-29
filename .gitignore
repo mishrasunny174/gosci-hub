@@ -14,5 +14,9 @@
 # Dependency directories (remove the comment below to include it)
 # vendor/
 #
+# binaries and pdf files
 output.pdf
 gosci-hub
+
+# vscode
+.vscode/
