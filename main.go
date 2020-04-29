@@ -1,13 +1,44 @@
 package main
 
 import (
+	"bytes"
+	"flag"
+	"fmt"
+	"io"
 	"log"
+	"os"
+
+	"github.com/mishrasunny174/gosci-hub/libgoscihub"
 )
 
-func main() {
-	pdfBuff, err := libgoscihub.GetPdfFromArticleURL("https://link.springer.com/referenceworkentry/10.1007%2F978-1-4419-1428-6_634")
+func writeFile(filePath string, data []byte) (int64, error) {
+	outFile, err := os.Create(filePath)
 	if err != nil {
-		log.Println(err)
+		return -1, err
 	}
-	log.Printf("%v\n", pdfBuff)
+	defer outFile.Close()
+	bytesWritten, err := io.Copy(outFile, bytes.NewReader(data))
+	if err != nil {
+		return -1, err
+	}
+	return bytesWritten, nil
+}
+
+func main() {
+	url := flag.String("url", "", "Link of article you want to download")
+	outFile := flag.String("outfile", "output.pdf", "Output File")
+	flag.Parse()
+	if len(*url) == 0 {
+		flag.Usage()
+		return
+	}
+	data, err := libgoscihub.GetPDFFromArticleURL(*url)
+	if err != nil {
+		log.Fatal(err)
+	}
+	bytesWritten, err := writeFile(*outFile, data)
+	if err != nil {
+		log.Fatal(err)
+	}
+	fmt.Printf("Article downloaded and saved as %s of size %d bytes\n", *outFile, bytesWritten)
 }
