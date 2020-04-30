@@ -18,7 +18,12 @@ func (PDFNotFoundError) Error() string {
 var (
 	scihubURLs = []string{
 		"https://sci-hub.tw/",
-		"https://sci-hub.im/"}
+		"https://sci-hub.im/",
+		"https://scihub.wikicn.top/",
+		"https://sci-hub.ren/",
+		"https://sci-hub.se/",
+		"https://sci-hub.shop/",
+	}
 )
 
 // GetPDFURL function will take the scihub base url and article url and it will return
