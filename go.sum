@@ -2,8 +2,14 @@ github.com/PuerkitoBio/goquery v1.5.1 h1:PSPBGne8NIUWw+/7vFBV+kG2J/5MOjbzc7154Oa
 github.com/PuerkitoBio/goquery v1.5.1/go.mod h1:GsLWisAFVj4WgDibEWF4pvYnkVQBpKBKeU+7zCJoLcc=
 github.com/andybalholm/cascadia v1.1.0 h1:BuuO6sSfQNFRu1LppgbD25Hr2vLYW25JvxHs5zzsLTo=
 github.com/andybalholm/cascadia v1.1.0/go.mod h1:GsXiBklL0woXo1j/WYWtSYYC4ouU9PqHO0sqidkEA4Y=
+github.com/dustin/go-humanize v1.0.0 h1:VSnTsYCnlFHaM2/igO1h6X3HA71jcobQuxemgkq4zYo=
+github.com/dustin/go-humanize v1.0.0/go.mod h1:HtrtbFcZ19U5GC7JDqmcUSB87Iq5E25KnS6fMYU6eOk=
+github.com/mishrasunny174/gosci-hub/libdownloader v0.0.0-20200430051712-a88785d6d9e3 h1:4Jj4xXum1s8I+OCOUM42GQI6xtMBH7h75pYt/JQe9wg=
+github.com/mishrasunny174/gosci-hub/libdownloader v0.0.0-20200430051712-a88785d6d9e3/go.mod h1:xHVWGxsAUV7D5dzHRJ+8qJteyg5tqEyUSYhxVIQngQc=
 github.com/mishrasunny174/gosci-hub/libgoscihub v0.0.0-20200429173224-3ae29d468c2b h1:rg1IG4UYWo8aVJYwAuVBhr0S+y6fbB/zwR1OW/kDHd8=
 github.com/mishrasunny174/gosci-hub/libgoscihub v0.0.0-20200429173224-3ae29d468c2b/go.mod h1:S8LzzAAoRG3nh4oLGmYgZ6nCYv8bU8JTqNoRyq0GmDk=
+github.com/mishrasunny174/gosci-hub/libgoscihub v0.0.0-20200429183422-8f2f1b2eb5f8 h1:ZK/EIaFNn5zklAwgNB2ijEnXWVXu3/PT/sfVq+c9RjU=
+github.com/mishrasunny174/gosci-hub/libgoscihub v0.0.0-20200429183422-8f2f1b2eb5f8/go.mod h1:X3F+jg4KAMvvkxw0+w1p24pDHLZyoR0fsJNeeC3ff8w=
 golang.org/x/crypto v0.0.0-20190308221718-c2843e01d9a2/go.mod h1:djNgcEr1/C05ACkg1iLfiJU5Ep61QUkGW8qpdssI0+w=
 golang.org/x/net v0.0.0-20180218175443-cbe0f9307d01/go.mod h1:mL1N/T3taQHkDXs73rZJwtUhF3w3ftmwwsq0BUmARs4=
 golang.org/x/net v0.0.0-20200202094626-16171245cfb2 h1:CCH4IOTTfewWjGOlSp+zGcjutRKlBEZQ6wTn8ozI/nI=

@@ -21,7 +21,7 @@ const (
 
 // GetPDFURL function will take the scihub base url and article url and it will return
 // the url of the pdf for that article
-func getPDFURL(scihubURL, articleURL string) (string, error) {
+func GetPDFURL(articleURL string) (string, error) {
 	var pdfURL string
 	data := url.Values{
 		"request": {articleURL},
