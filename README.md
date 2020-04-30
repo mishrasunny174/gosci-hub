@@ -1,4 +1,7 @@
 # GOSCI-HUB
+
+[![Build Status](https://travis-ci.com/mishrasunny174/gosci-hub.svg?branch=master)](https://travis-ci.com/mishrasunny174/gosci-hub)
+
 A simple cli application to download pdf of research papers from sci-hub
 
 ## Installation
