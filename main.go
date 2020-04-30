@@ -5,6 +5,9 @@ import (
 	"fmt"
 	"log"
 
+	"github.com/dustin/go-humanize"
+	"github.com/mishrasunny174/gosci-hub/libdownloader"
+
 	"github.com/mishrasunny174/gosci-hub/libgoscihub"
 )
 
@@ -20,5 +23,10 @@ func main() {
 	if err != nil {
 		log.Fatal(err)
 	}
-	fmt.Printf("Article downloaded and saved as %s of size %d bytes\n", *outFile, bytesWritten)
+	fmt.Println("Found article\nStarting Download")
+	bytesDownloaded, err := libdownloader.DownloadFile(pdfURL)
+	if err != nil {
+		log.Fatal(err)
+	}
+	fmt.Printf("Downloaded %s of size %d bytes\n", *outFile, humanize.Bytes(bytesDownloaded))
 }

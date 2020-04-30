@@ -31,7 +31,9 @@ func (DownloadFailedError) Error() string {
 
 // DownloadFile function will take an url and output file name as input and it will download
 // the file from the passedurl and save it to outputFile
-func DownloadFile(url string, outputFile string) (int64, error) {
+// it return the size of file downloaded in bytes if there is no error otherwise an error is
+// returned
+func DownloadFile(url string, outputFile string) (uint64, error) {
 	response, err := http.Get(url)
 	if err != nil {
 		return 0, err
@@ -46,5 +48,5 @@ func DownloadFile(url string, outputFile string) (int64, error) {
 	if err != nil {
 		return 0, DownloadFailedError{}
 	}
-	return bytesDownloaded, nil
+	return uint64(bytesDownloaded), nil
 }
