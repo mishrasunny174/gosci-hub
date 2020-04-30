@@ -10,6 +10,8 @@ github.com/mishrasunny174/gosci-hub/libgoscihub v0.0.0-20200429173224-3ae29d468c
 github.com/mishrasunny174/gosci-hub/libgoscihub v0.0.0-20200429173224-3ae29d468c2b/go.mod h1:S8LzzAAoRG3nh4oLGmYgZ6nCYv8bU8JTqNoRyq0GmDk=
 github.com/mishrasunny174/gosci-hub/libgoscihub v0.0.0-20200429183422-8f2f1b2eb5f8 h1:ZK/EIaFNn5zklAwgNB2ijEnXWVXu3/PT/sfVq+c9RjU=
 github.com/mishrasunny174/gosci-hub/libgoscihub v0.0.0-20200429183422-8f2f1b2eb5f8/go.mod h1:X3F+jg4KAMvvkxw0+w1p24pDHLZyoR0fsJNeeC3ff8w=
+github.com/mishrasunny174/gosci-hub/libgoscihub v0.0.0-20200430052657-bb2df5fc2788 h1:84nNby4MGOAA5FV6Ek0CGMArcCNN+CtzqQGCcYPZ4hY=
+github.com/mishrasunny174/gosci-hub/libgoscihub v0.0.0-20200430052657-bb2df5fc2788/go.mod h1:X3F+jg4KAMvvkxw0+w1p24pDHLZyoR0fsJNeeC3ff8w=
 golang.org/x/crypto v0.0.0-20190308221718-c2843e01d9a2/go.mod h1:djNgcEr1/C05ACkg1iLfiJU5Ep61QUkGW8qpdssI0+w=
 golang.org/x/net v0.0.0-20180218175443-cbe0f9307d01/go.mod h1:mL1N/T3taQHkDXs73rZJwtUhF3w3ftmwwsq0BUmARs4=
 golang.org/x/net v0.0.0-20200202094626-16171245cfb2 h1:CCH4IOTTfewWjGOlSp+zGcjutRKlBEZQ6wTn8ozI/nI=

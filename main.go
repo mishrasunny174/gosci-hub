@@ -7,7 +7,6 @@ import (
 
 	"github.com/dustin/go-humanize"
 	"github.com/mishrasunny174/gosci-hub/libdownloader"
-
 	"github.com/mishrasunny174/gosci-hub/libgoscihub"
 )
 
@@ -19,12 +18,12 @@ func main() {
 		flag.Usage()
 		return
 	}
-	pdfURL, err := libgoscihub.GetPDFURL(url)
+	pdfURL, err := libgoscihub.GetPDFURL(*url)
 	if err != nil {
 		log.Fatal(err)
 	}
 	fmt.Println("Found article\nStarting Download")
-	bytesDownloaded, err := libdownloader.DownloadFile(pdfURL)
+	bytesDownloaded, err := libdownloader.DownloadFile(pdfURL, *outFile)
 	if err != nil {
 		log.Fatal(err)
 	}

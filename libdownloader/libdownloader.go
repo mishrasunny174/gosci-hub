@@ -29,8 +29,9 @@ func (DownloadFailedError) Error() string {
 	return "ERROR: Download Failed"
 }
 
-// DownloadFile function will take an url and output file name as input and it will download
-// the file from the passedurl and save it to outputFile
+// DownloadFile function takes an url and output file name as arguments
+// @param url: url of the file to download
+// @param outputFile: path of the file to download to
 // it return the size of file downloaded in bytes if there is no error otherwise an error is
 // returned
 func DownloadFile(url string, outputFile string) (uint64, error) {
