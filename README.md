@@ -20,4 +20,4 @@ Usage of gosci-hub:
 
 ## Demo
 
-[![asciicast](https://asciinema.org/a/aWPqdLtXXswirVZ8zidvNgbJm.svg)](https://asciinema.org/a/aWPqdLtXXswirVZ8zidvNgbJm)
+[![asciicast](https://asciinema.org/a/325455.svg)](https://asciinema.org/a/325455)
