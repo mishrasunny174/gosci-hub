@@ -18,6 +18,7 @@ func main() {
 		flag.Usage()
 		return
 	}
+	fmt.Println("Searching for article")
 	pdfURL, err := libgoscihub.GetPDFURL(*url)
 	if err != nil {
 		log.Fatal(err)
@@ -27,5 +28,5 @@ func main() {
 	if err != nil {
 		log.Fatal(err)
 	}
-	fmt.Printf("Downloaded %s of size %d bytes\n", *outFile, humanize.Bytes(bytesDownloaded))
+	fmt.Printf("\nDownloaded %s of size %s\n", *outFile, humanize.Bytes(bytesDownloaded))
 }

@@ -6,6 +6,8 @@ github.com/dustin/go-humanize v1.0.0 h1:VSnTsYCnlFHaM2/igO1h6X3HA71jcobQuxemgkq4
 github.com/dustin/go-humanize v1.0.0/go.mod h1:HtrtbFcZ19U5GC7JDqmcUSB87Iq5E25KnS6fMYU6eOk=
 github.com/mishrasunny174/gosci-hub/libdownloader v0.0.0-20200430051712-a88785d6d9e3 h1:4Jj4xXum1s8I+OCOUM42GQI6xtMBH7h75pYt/JQe9wg=
 github.com/mishrasunny174/gosci-hub/libdownloader v0.0.0-20200430051712-a88785d6d9e3/go.mod h1:xHVWGxsAUV7D5dzHRJ+8qJteyg5tqEyUSYhxVIQngQc=
+github.com/mishrasunny174/gosci-hub/libdownloader v0.0.0-20200430054041-88de87fb2949 h1:VhLgA5SHdb80lWJ7jb6hJ1Nlrfmrk710QrZ0iPF6Qi4=
+github.com/mishrasunny174/gosci-hub/libdownloader v0.0.0-20200430054041-88de87fb2949/go.mod h1:xHVWGxsAUV7D5dzHRJ+8qJteyg5tqEyUSYhxVIQngQc=
 github.com/mishrasunny174/gosci-hub/libgoscihub v0.0.0-20200430052657-bb2df5fc2788 h1:84nNby4MGOAA5FV6Ek0CGMArcCNN+CtzqQGCcYPZ4hY=
 github.com/mishrasunny174/gosci-hub/libgoscihub v0.0.0-20200430052657-bb2df5fc2788/go.mod h1:X3F+jg4KAMvvkxw0+w1p24pDHLZyoR0fsJNeeC3ff8w=
 golang.org/x/crypto v0.0.0-20190308221718-c2843e01d9a2/go.mod h1:djNgcEr1/C05ACkg1iLfiJU5Ep61QUkGW8qpdssI0+w=
