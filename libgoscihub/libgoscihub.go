@@ -15,31 +15,32 @@ func (PDFNotFoundError) Error() string {
 	return "Unable to find pdf for the given article"
 }
 
-const (
-	scihubURL = "https://sci-hub.tw/"
+var (
+	scihubURLs = []string{
+		"https://sci-hub.tw/",
+		"https://sci-hub.im/"}
 )
 
 // GetPDFURL function will take the scihub base url and article url and it will return
 // the url of the pdf for that article
 func GetPDFURL(articleURL string) (string, error) {
-	var pdfURL string
 	data := url.Values{
 		"request": {articleURL},
 	}
-	resp, err := http.PostForm(scihubURL, data)
-	if err != nil {
-		return "", err
+	for _, scihubURL := range scihubURLs {
+		resp, err := http.PostForm(scihubURL, data)
+		if err != nil {
+			continue
+		}
+		doc, err := goquery.NewDocumentFromReader(resp.Body)
+		if err != nil {
+			continue
+		}
+		iframeSelection := doc.Find("iframe")
+		pdfURL, ok := iframeSelection.Attr("src")
+		if ok {
+			return pdfURL, nil
+		}
 	}
-	doc, err := goquery.NewDocumentFromReader(resp.Body)
-	if err != nil {
-		return "", err
-	}
-	iframeSelection := doc.Find("iframe")
-	href, ok := iframeSelection.Attr("src")
-	if ok {
-		pdfURL = href
-	} else {
-		return "", PDFNotFoundError{}
-	}
-	return pdfURL, nil
+	return "", PDFNotFoundError{}
 }
