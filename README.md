@@ -7,7 +7,7 @@ A simple cli application to download pdf of research papers from sci-hub
 ## Installation
 
 ```
-go instal github.com/mishrasunny174/gosci-hub
+go install github.com/mishrasunny174/gosci-hub
 ```
 
 ## Usage
