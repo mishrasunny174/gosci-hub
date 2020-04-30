@@ -3,6 +3,7 @@ package main
 import (
 	"flag"
 	"fmt"
+	"log"
 
 	"github.com/mishrasunny174/gosci-hub/libgoscihub"
 )
@@ -16,5 +17,8 @@ func main() {
 		return
 	}
 	pdfURL, err := libgoscihub.GetPDFURL(url)
+	if err != nil {
+		log.Fatal(err)
+	}
 	fmt.Printf("Article downloaded and saved as %s of size %d bytes\n", *outFile, bytesWritten)
 }
