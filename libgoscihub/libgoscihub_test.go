@@ -17,7 +17,7 @@ func TestGetPDFURL(t *testing.T) {
 		if err != nil {
 			t.Fatalf("Unknow error occured\nReturned value: %s\nERROR: %v\n", got, err)
 		}
-		matched, err := regexp.MatchString(`https://.*\.pdf`, got)
+		matched, err := regexp.MatchString(`.*\.pdf`, got)
 		if err != nil {
 			t.Fatal(err)
 		}
