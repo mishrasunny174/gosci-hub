@@ -3,6 +3,7 @@ package libgoscihub
 import (
 	"net/http"
 	"net/url"
+	"regexp"
 
 	"github.com/PuerkitoBio/goquery"
 )
@@ -44,6 +45,10 @@ func GetPDFURL(articleURL string) (string, error) {
 		iframeSelection := doc.Find("iframe")
 		pdfURL, ok := iframeSelection.Attr("src")
 		if ok {
+			if matched, err := regexp.MatchString(`https:.*`, pdfURL); err == nil && matched {
+				return pdfURL, nil
+			}
+			pdfURL = "https:" + pdfURL
 			return pdfURL, nil
 		}
 	}
