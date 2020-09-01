@@ -1,0 +1,23 @@
+name: code build test
+
+on:
+    push:
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        steps:
+        -   name: Checkout code
+            uses: actions/checkout@v2
+        
+        -   name: Setup go environment
+            uses: actions/setup-go@v2
+
+        -   name: Test libdownloader
+            run: cd $GITHUB_WORKSPACE/gosci-hub/libdownloader && go test -v
+        
+        -   name: Test libgoscihub
+            run: cd $GITHUB_WORKSPACE/gosci-hub/libgoscihub && go test -v
+        
+        -   name: Compile project
+            run: cd $GITHUB_WORKSPACE/gosci-hub/ && go build
