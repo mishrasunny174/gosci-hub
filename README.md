@@ -1,6 +1,7 @@
 # GOSCI-HUB
 
-[![Build Status](https://travis-ci.com/mishrasunny174/gosci-hub.svg?branch=master)](https://travis-ci.com/mishrasunny174/gosci-hub)
+[![Build Status](https://img.shields.io/github/workflow/status/mishrasunny174/gosci-hub/CI)](https://github.com/mishrasunny174/gosci-hub/actions?query=workflow%3ACI)
+![GitHub go.mod Go version](https://img.shields.io/github/go-mod/go-version/mishrasunny174/gosci-hub)
 
 A simple cli application to download pdf of research papers from sci-hub.
 
